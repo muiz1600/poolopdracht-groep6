@@ -1,5 +1,5 @@
 var TableLight = function (x,y,z) {
-  this.spotlight = new THREE.SpotLight(0xffffe5, 1);
+  this.spotlight = new THREE.SpotLight(0xffffe5, 1.5);
 
   this.spotlight.position.set(x, y, z);
   this.spotlight.target.position.set(x, 0, z); //the light points directly towards the xz plane

@@ -6,7 +6,7 @@ var Table = function () {
   var loader = new THREE.JSONLoader();
   loader.load('json/table/base.json', function (geometry) {
     var mesh = new THREE.Mesh(geometry, new THREE.MeshPhongMaterial({
-      color: new THREE.Color(0x000000),
+      color: new THREE.Color(0x999999),
       specular: 0x404040,
       shininess: 20,
       shading: THREE.SmoothShading
@@ -25,7 +25,7 @@ var Table = function () {
     var mesh = new THREE.Mesh(geometry, new THREE.MeshPhongMaterial({
       color: new THREE.Color(TABLE_COLORS.cloth),
       specular: 0x404040,
-      shininess: 10,
+      shininess: 0,
       shading: THREE.SmoothShading
     }));
 
