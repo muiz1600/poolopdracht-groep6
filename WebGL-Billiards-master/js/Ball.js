@@ -16,8 +16,7 @@ Ball.RADIUS = 5.715 / 2; // cm
 Ball.MASS = 0.170; // kg
 Ball.contactMaterial = new CANNON.Material("ballMaterial");
 
-/** Load env map for the ball.
-  TODO: find a nicer place to do this. */
+
 Ball.envMapUrls = [
   'images/skybox1/px.png', // positive x
   'images/skybox1/nx.png', // negative x
@@ -61,8 +60,8 @@ Ball.prototype.createMesh = function (x,y,z) {
   var geometry = new THREE.SphereGeometry(Ball.RADIUS, 16, 16);
   var material = new THREE.MeshPhongMaterial({
     specular: 0xffffff,
-    shininess: 140,
-    reflectivity: 0.1,
+    shininess: 0,
+    reflectivity: 0,
     envMap: Ball.envMap,
     combine: THREE.AddOperation,
     shading: THREE.SmoothShading
@@ -80,10 +79,7 @@ Ball.prototype.createMesh = function (x,y,z) {
   var sphere = new THREE.Mesh(geometry, material);
 
   sphere.position.set(x,y,z);
-
-  sphere.castShadow = true;
-  sphere.receiveShadow = true;
-
+  
   return sphere;
 };
 
