@@ -8,7 +8,7 @@ var debug = false; // if true then collision wireframes are drawn
 var progressBar;
 
 var stats = new Stats();
-stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
+stats.setMode( 1 ); // 0: fps, 1: ms, 2: mb
 
 var textureLoader = new THREE.TextureLoader();
 THREE.DefaultLoadingManager.onProgress = function (item, loaded, total) {
