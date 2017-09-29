@@ -73,18 +73,6 @@ EightBallGame.prototype.coloredBallEnteredHole = function (name) {
   }
 }
 
-EightBallGame.prototype.tickTimer = function () {
-  gui.UpdateTimer(eightballgame.timer);
-  if (eightballgame.timer == 0) {
-    gui.log(eightballgame.turn + " ran out of time");
-    eightballgame.state = "outoftime";
-    eightballgame.switchSides();
-  } else {
-    eightballgame.timer--;
-    eightballgame.ticker = setTimeout(eightballgame.tickTimer, 1000);
-  }
-}
-
 EightBallGame.prototype.switchSides = function () {
   eightballgame.turn = eightballgame.turn == 'player1' ? 'player2': 'player1';
 
@@ -94,14 +82,12 @@ EightBallGame.prototype.switchSides = function () {
 EightBallGame.prototype.endGame = function () {
   eightballgame.state = 'gameover';
   var winner = eightballgame.turn == 'player1' ? 'Player 1' : 'Player 2';
-  clearTimeout(eightballgame.ticker);
   gui.showEndGame(winner);
 }
 
 EightBallGame.prototype.hitButtonClicked = function (strength) {
   if (game.balls[0].rigidBody.sleepState == CANNON.Body.SLEEPING && eightballgame.state == 'turn') {
     game.ballHit(strength);
-    clearTimeout(eightballgame.ticker);
     eightballgame.state = 'turnwaiting';
     var x = setInterval(function() {
       if (game.balls[0].rigidBody.sleepState != CANNON.Body.SLEEPING) return;

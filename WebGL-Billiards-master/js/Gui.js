@@ -39,10 +39,6 @@ GameGui.prototype.play8BallClicked = function () {
   eightballgame = new EightBallGame();
 };
 
-GameGui.prototype.UpdateTimer = function(timerVal) {
-  document.getElementsByClassName('timer')[0].textContent = timerVal;
-};
-
 GameGui.prototype.log = function(str) {
   var node = document.createElement('li');
   node.textContent = str;
