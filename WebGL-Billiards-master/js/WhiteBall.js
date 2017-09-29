@@ -121,7 +121,6 @@ WhiteBall.prototype.updateGuideLine = function () {
       break;
     }
   }
-  //This could possibly be optimized with some more clever usage of THREE js-s offered functions (look into Ray, etc)
 
   if (intersectingBallIndex == -1) {
     // We're intersecting with the edge of the table

@@ -3,8 +3,6 @@ var WIDTH  = 960,
 
 // Globals
 var renderer, scene, camera, game, controls, keyboard, lightsConfig, world, gui, eightballgame;
-var debug = false; // if true then collision wireframes are drawn
-
 var progressBar;
 
 var stats = new Stats();

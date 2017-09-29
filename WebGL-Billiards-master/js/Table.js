@@ -91,13 +91,13 @@ var Table = function () {
 
   this.rigidBody = this.createFloor(); //floor
 
-  //corners of -x table side
+  //-x table side
   this.hole1 = new Hole( Table.LEN_X / 2 + 1.5, 0, -Table.LEN_Z / 2 - 1.5,  Math.PI / 4);
   this.hole2 = new Hole(-Table.LEN_X / 2 - 1.5, 0, -Table.LEN_Z / 2 - 1.5, -Math.PI / 4);
-  //middle holes
+  //middle
   this.hole3 = new Hole(0, 0, -Table.LEN_Z / 2 - 4.8, 0);
   this.hole4 = new Hole(0, 0,  Table.LEN_Z / 2 + 4.8, Math.PI);
-  //corners of +x table side
+  //+x table side
   this.hole5 = new Hole( Table.LEN_X / 2 + 1.5, 0, Table.LEN_Z / 2 + 1.5,  3 * Math.PI / 4);
   this.hole6 = new Hole(-Table.LEN_X / 2 - 1.5, 0, Table.LEN_Z / 2 + 1.5, -3 * Math.PI / 4);
 
@@ -114,8 +114,7 @@ Table.WALL_HEIGHT = 6;
 Table.floorContactMaterial = new CANNON.Material('floorMaterial');
 Table.wallContactMaterial = new CANNON.Material('wallMaterial');
 
-/** Creates cannon js walls
-This method is 3am spaghetti, you've been warned..*/
+// Creates cannon js walls
 Table.prototype.createWallBodies = function () {
   //walls of -z
   var wall1 = new LongWall( Table.LEN_X / 4 - 0.8, 2, -Table.LEN_Z / 2, 61);
@@ -138,9 +137,6 @@ Table.prototype.createWallBodies = function () {
   var walls = [wall1, wall2, wall3, wall4, wall5, wall6];
   for (var i in walls) {
     world.addBody(walls[i].body);
-    if (debug) {
-      addCannonVisual(walls[i].body);
-    }
   }
 
   return walls;
@@ -156,15 +152,12 @@ Table.prototype.createFloor = function () {
   var floorBoxSmall = new CANNON.Box(new CANNON.Vec3(narrowStripWidth, floorThickness, narrowStripLength));
 
   this.body = new CANNON.Body({
-    mass: 0, // mass == 0 makes the body static
+    mass: 0, //body = static
     material: Table.floorContactMaterial
   });
   this.body.addShape(floorBox,      new CANNON.Vec3(0, -floorThickness, 0));
   this.body.addShape(floorBoxSmall, new CANNON.Vec3(-mainAreaX - narrowStripWidth, -floorThickness, 0));
   this.body.addShape(floorBoxSmall, new CANNON.Vec3( mainAreaX + narrowStripWidth, -floorThickness, 0));
 
-  if (debug) {
-    addCannonVisual(this.body, 0xff0000);
-  }
   world.add(this.body);
 };
