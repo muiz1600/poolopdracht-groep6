@@ -6,7 +6,7 @@ var renderer, scene, camera, game, controls, keyboard, lightsConfig, world, gui,
 var progressBar;
 
 var stats = new Stats();
-stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
+stats.setMode( 1 ); // 0: fps, 1: ms, 2: mb
 
 var textureLoader = new THREE.TextureLoader();
 THREE.DefaultLoadingManager.onProgress = function (item, loaded, total) {
