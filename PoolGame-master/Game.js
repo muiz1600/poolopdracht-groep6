@@ -69,7 +69,7 @@ class Game {
 
         for(let ball of this.balls)
             ball.stoppedRolling = this.whiteStop;
-        MAIN.scene.lights.spot.target = this.balls[0];
+
         let ballPos = this.balls[0].position;
         MAIN.scene.cue.position.set(ballPos.x, ballPos.y, ballPos.z);
 

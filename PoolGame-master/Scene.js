@@ -1,7 +1,6 @@
 class Scene extends THREE.Scene {
     constructor(renderElement, main) {
         super();
-
         let scene = this;
         this.main = main;
 
@@ -29,23 +28,18 @@ class Scene extends THREE.Scene {
         this.stats.showPanel();
         document.body.appendChild(this.stats.dom);
 
-
             this.camera.rotateOnAxis(new THREE.Vector3(0, 0, 1), Math.PI);
             this.camera.position.x = 0;
             this.camera.position.y = 50;
             this.camera.position.z = -0.01;
             this.camera.lookAt(new THREE.Vector3);
 
-
         this.textureLoader = new THREE.TextureLoader();
 
         this.lights = {
-            spot: new SpotLight(this, 0, 5, 20, new THREE.Object3D),
             directional: new DirectionalLight(this, -10, 30, 30, null, true, 0xffffff, 0.6),
             ambient: new AmbientLight(this, 0xffffdd, 0.1)
         };
-
-
 
         let clothMap = this.textureLoader.load('img/textures/cloth©.jpg'),
             clothMaterial = new THREE.MeshStandardMaterial(
@@ -101,14 +95,15 @@ class Scene extends THREE.Scene {
         this.tableWallMesh = this.shapesToMesh(tableWallShapes, .5, clothMaterial);
         this.tableWallMesh.rotateX(Math.PI / 2);
         this.tableWallMesh.receiveShadow = true;
+        this.tableWallMesh.castShadow = false;
         this.tableWallMesh.position.y = .5;
         this.add(this.tableWallMesh);
 
-        this.tableFloor = new ObjMesh(this, 'obj/table/floor.obj', 'img/textures/cloth©.jpg', 2, false, true, !this.laptopGraphics);
-        this.tableBase = new ObjMesh(this, 'obj/table/woodwalls.obj', 'img/textures/wood©.jpg', 30, true, this.laptopGraphics, !this.laptopGraphics);
-        this.tableLegs = new ObjMesh(this, 'obj/table/legs.obj', 'img/textures/wood©.jpg', 10, !this.laptopGraphics, true, !this.laptopGraphics);
+        this.tableFloor = new ObjMesh(this, 'obj/table/floor.obj', 'img/textures/cloth©.jpg', 2, false, true, false);
+        this.tableBase = new ObjMesh(this, 'obj/table/woodwalls.obj', 'img/textures/wood©.jpg', 30, true, this.laptopGraphics, false);
+        this.tableLegs = new ObjMesh(this, 'obj/table/legs.obj', 'img/textures/wood©.jpg', 10, false, true, false);
 
-        this.trophy = new ObjMesh(this, 'obj/trophy.obj', 'img/textures/gold.jpg', 10, !this.laptopGraphics, false, !this.laptopGraphics, 0.02, false);
+        this.trophy = new ObjMesh(this, 'obj/trophy.obj', 'img/textures/gold.jpg', 10, false, false, false, 0.02, false);
 
         let keuGeometry = new THREE.CylinderGeometry(0.06, 0.1, 15, 32, 32),
             keuMaterial = new THREE.MeshStandardMaterial({ color: 0xfda43a }),
@@ -117,7 +112,7 @@ class Scene extends THREE.Scene {
         keuMesh.rotateX(Math.PI / 2);
         keuMesh.position.z -= 8.5;
         keuMesh.rotateX(0.1);
-        keuMesh.castShadow = !this.laptopGraphics;
+        keuMesh.castShadow = false;
 
         this.cue = new THREE.Group();
         this.cue.add(keuMesh);

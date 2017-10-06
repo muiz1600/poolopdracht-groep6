@@ -1,4 +1,3 @@
-//deels credit aan hindrik
 class SkyBox extends THREE.Mesh {
     constructor(scene, directory) {
         let urls = [directory + 'posx.jpg', directory + 'negx.jpg', directory + 'posy.jpg', directory + 'negy.jpg', directory + 'posz.jpg', directory + 'negz.jpg'],
