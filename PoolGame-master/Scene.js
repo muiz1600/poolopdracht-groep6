@@ -204,7 +204,7 @@ class Scene extends THREE.Scene {
             .start();
     }
 
-    animateScale(object, newPos, time = 1000, target = null, easing = TWEEN.Easing.Quartic.InOut) {
+    /*animateScale(object, newPos, time = 1000, target = null, easing = TWEEN.Easing.Quartic.InOut) {
         let updater = self.setInterval(TWEEN.update);
         return new TWEEN.Tween(object.scale)
             .to(newPos, time)
@@ -216,7 +216,7 @@ class Scene extends THREE.Scene {
             })
             .easing(easing)
             .start();
-    }
+    }*/
 
     pointsToShape(...points) {
         points.reverse();
