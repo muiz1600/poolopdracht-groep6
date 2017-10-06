@@ -28,11 +28,11 @@ class Scene extends THREE.Scene {
         this.stats.showPanel();
         document.body.appendChild(this.stats.dom);
 
-            this.camera.rotateOnAxis(new THREE.Vector3(0, 0, 1), Math.PI);
-            this.camera.position.x = 0;
-            this.camera.position.y = 50;
-            this.camera.position.z = -0.01;
-            this.camera.lookAt(new THREE.Vector3);
+        this.camera.rotateOnAxis(new THREE.Vector3(0, 0, 1), Math.PI);
+        this.camera.position.x = 0;
+        this.camera.position.y = 50;
+        this.camera.position.z = -0.01;
+        this.camera.lookAt(new THREE.Vector3);
 
         this.textureLoader = new THREE.TextureLoader();
 
@@ -101,8 +101,6 @@ class Scene extends THREE.Scene {
 
         this.tableFloor = new ObjMesh(this, 'obj/table/floor.obj', 'img/textures/cloth©.jpg', 2, false, true, false);
         this.tableBase = new ObjMesh(this, 'obj/table/woodwalls.obj', 'img/textures/wood©.jpg', 30, true, this.laptopGraphics, false);
-        this.tableLegs = new ObjMesh(this, 'obj/table/legs.obj', 'img/textures/wood©.jpg', 10, false, true, false);
-
         this.trophy = new ObjMesh(this, 'obj/trophy.obj', 'img/textures/gold.jpg', 10, false, false, false, 0.02, false);
 
         let keuGeometry = new THREE.CylinderGeometry(0.06, 0.1, 15, 32, 32),
@@ -172,22 +170,6 @@ class Scene extends THREE.Scene {
     topView() {
         this.cancelTrophyView();
         this.animateObject(this.camera, new THREE.Vector3(.01, 25, 0), 300, new THREE.Vector3);
-    }
-    westView() {
-        this.cancelTrophyView();
-        this.animateObject(this.camera, new THREE.Vector3(15, 15, 0), 300, new THREE.Vector3);
-    }
-    eastView() {
-        this.cancelTrophyView();
-        this.animateObject(this.camera, new THREE.Vector3(-15, 15, 0), 300, new THREE.Vector3);
-    }
-    northView() {
-        this.cancelTrophyView();
-        this.animateObject(this.camera, new THREE.Vector3(0, 15, 25), 300, new THREE.Vector3);
-    }
-    southView() {
-        this.cancelTrophyView();
-        this.animateObject(this.camera, new THREE.Vector3(0, 15, -25), 300, new THREE.Vector3);
     }
     trophyView() {
         this.trophy.mesh.visible = true;
