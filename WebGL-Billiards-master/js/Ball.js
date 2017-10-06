@@ -14,7 +14,7 @@ var Ball = function (x, y, z, name, color) {
 
 Ball.RADIUS = 5.715 / 2; // cm
 Ball.MASS = 0.170; // kg
-Ball.contactMaterial = new CANNON.Material("ballMaterial");
+Ball.contactMaterial = new THREE.Material("ballMaterial");
 
 
 Ball.envMapUrls = [
@@ -79,7 +79,7 @@ Ball.prototype.createMesh = function (x,y,z) {
   var sphere = new THREE.Mesh(geometry, material);
 
   sphere.position.set(x,y,z);
-  
+
   return sphere;
 };
 
