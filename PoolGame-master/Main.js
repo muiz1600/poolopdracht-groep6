@@ -29,70 +29,26 @@ class Main {
         this.keyHandler.setSingleKey(' ', 'Shoot cue', function() {
             main.game.shoot();
         });
-        this.keyHandler.setSingleKey('5', 'Top view', function() {
-            main.scene.topView();
-        });
-        this.keyHandler.setSingleKey('6', 'East view', function() {
-            main.scene.eastView();
-        });
-        this.keyHandler.setSingleKey('4', 'West view', function() {
-            main.scene.westView();
-        });
-        this.keyHandler.setSingleKey('2', 'South view', function() {
-            main.scene.southView();
-        });
-        this.keyHandler.setSingleKey('8', 'North view', function() {
-            main.scene.northView();
-        });
-        this.keyHandler.setSingleKey('y', 'Toggle performance statistics', function() {
-            main.scene.toggleStats();
-        });
-        this.keyHandler.setSingleKey('o', 'Pause all loops / play one frame (includes hold keys)', function() {
-            clearInterval(MAIN.loop.gameloop);
-            MAIN.loop.loop();
-        });
-        this.keyHandler.setSingleKey('p', 'Resume all loops', function() {
-            MAIN.loop.start();
-        });
+
         this.keyHandler.setSingleKey('c', 'Enable aim line', function() {
             main.scene.children = main.scene.children.filter((child) => child.type !== 'Line');
             main.game.cheatLine = !main.game.cheatLine;
         });
-        this.keyHandler.setSingleKey('w', 'Place white ball freely', function() {
-            main.game.freePlace(main.game.balls.filter((ball) => ball.number === 0)[0]);
-        });
-        this.keyHandler.setSingleKey('s', 'Switch players', function() {
-            main.game.switchPlayers();
-        });
-        this.keyHandler.setSingleKey('/', 'Show/hide keymap', function() {
-            main.showKeyMap();
-        });
-        this.keyHandler.setSingleKey('n', 'Start new game', function() {
-            location.hash = main.game.players[0].name + '//' + main.game.players[1].name;
-            location.reload();
-        });
+
         this.keyHandler.setContinuousKey('ArrowLeft', 'Rotate cue left', function() {
             let rotateSpeed = 3 / MAIN.loop.tps;
-            rotateSpeed /= MAIN.keyHandler.isPressed('Shift') ? 10 : 1;
-            rotateSpeed /= MAIN.keyHandler.isPressed('Control') ? 5 : 1;
             MAIN.scene.cue.rotateY(rotateSpeed);
         });
         this.keyHandler.setContinuousKey('ArrowRight', 'Rotate cue right', function() {
             let rotateSpeed = 3 / MAIN.loop.tps;
-            rotateSpeed /= MAIN.keyHandler.isPressed('Shift') ? 10 : 1;
-            rotateSpeed /= MAIN.keyHandler.isPressed('Control') ? 5 : 1;
             MAIN.scene.cue.rotateY(-rotateSpeed);
         });
         this.keyHandler.setContinuousKey('ArrowUp', 'Cue power up', function() {
             let powerSpeed = 20 / MAIN.loop.tps;
-            powerSpeed /= MAIN.keyHandler.isPressed('Shift') ? 5 : 1;
-            powerSpeed /= MAIN.keyHandler.isPressed('Control') ? 5 : 1;
             MAIN.game.cuePower += powerSpeed;
         });
         this.keyHandler.setContinuousKey('ArrowDown', 'Cue power down', function() {
             let powerSpeed = 20 / MAIN.loop.tps;
-            powerSpeed /= MAIN.keyHandler.isPressed('Shift') ? 5 : 1;
-            powerSpeed /= MAIN.keyHandler.isPressed('Control') ? 5 : 1;
             MAIN.game.cuePower -= powerSpeed;
         });
 
