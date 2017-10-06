@@ -2,10 +2,6 @@ class Scene extends THREE.Scene {
     constructor(renderElement, main) {
         super();
 
-        if (localStorage.getItem('laptop') === null)
-            localStorage.laptop = !confirm('Enable high graphics?');
-        this.laptopGraphics = localStorage.laptop === 'true';
-
         let scene = this;
         this.main = main;
 
@@ -17,7 +13,7 @@ class Scene extends THREE.Scene {
             antialias: true
         });
 
-        this.renderer.shadowMap.enabled = !main.isMobile;
+        this.renderer.shadowMap.enabled = false;
         this.renderer.shadowMap.type = this.laptopGraphics ? THREE.BasicShadowMap : THREE.PCFSoftShadowMap;
         this.renderer.gammaInput = true;
         this.renderer.gammaOutput = true;
@@ -29,34 +25,17 @@ class Scene extends THREE.Scene {
             scene.onWindowResize();
         }, false);
 
-        if (!main.isMobile) {
-            this.controls = new THREE.OrbitControls(this.camera, renderElement);
-            this.controls.maxPolarAngle = Math.PI / 2 - 0.01;
-            this.controls.maxDistance = 100;
-            this.controls.minDistance = 5;
-        }
-
         this.stats = new Stats();
         this.stats.showPanel();
         document.body.appendChild(this.stats.dom);
 
-        if (main.isMobile) {
+
             this.camera.rotateOnAxis(new THREE.Vector3(0, 0, 1), Math.PI);
             this.camera.position.x = 0;
             this.camera.position.y = 50;
             this.camera.position.z = -0.01;
             this.camera.lookAt(new THREE.Vector3);
-        } else {
-            this.camera.rotation._x = -0.3739616455348653;
-            this.camera.rotation._y = 0.6795008955699466;
-            this.camera.rotation._z = 0.20803619565163492;
-            this.camera.rotateY(0.7);
-            this.camera.rotateX(-0.3);
 
-            this.camera.position.x = 12.962642602541662;
-            this.camera.position.y = 4.14642045750715;
-            this.camera.position.z = 21.23235543313809;
-        }
 
         this.textureLoader = new THREE.TextureLoader();
 
@@ -66,8 +45,7 @@ class Scene extends THREE.Scene {
             ambient: new AmbientLight(this, 0xffffdd, 0.1)
         };
 
-        if (!main.isMobile)
-            this.skyBox = new SkyBox(this, 'img/skybox/clouds/');
+
 
         let clothMap = this.textureLoader.load('img/textures/cloth©.jpg'),
             clothMaterial = new THREE.MeshStandardMaterial(
@@ -123,7 +101,6 @@ class Scene extends THREE.Scene {
         this.tableWallMesh = this.shapesToMesh(tableWallShapes, .5, clothMaterial);
         this.tableWallMesh.rotateX(Math.PI / 2);
         this.tableWallMesh.receiveShadow = true;
-        this.tableWallMesh.castShadow = !this.laptopGraphics;
         this.tableWallMesh.position.y = .5;
         this.add(this.tableWallMesh);
 

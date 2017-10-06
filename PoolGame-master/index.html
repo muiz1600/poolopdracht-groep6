@@ -4,7 +4,6 @@
     <meta charset='utf-8' />
     <title>PoolGame</title>
     <meta name='theme-color' content='#4674C7'>
-    <meta name='mobile-web-app-capable' content='yes'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel='icon' sizes='192x192' href='img/favicon.png'>
     <!-- Favicon moet 192x192 zijn -->
@@ -73,18 +72,10 @@
         <div id="menu">
             <h1>Online Pool</h1>
             <div class="menuItem" onclick="newGame()">New Game</div>
-            <div class="menuItem" onclick='MAIN.showKeyMap()'>Keymap</div>
         </div>
         <progress value="800" max="1000">
         </progress>
     </div>
-    <div id='help'>
-        <h1>Keybinds:</h1>
-        <div id='closeKeymap' onclick='MAIN.showKeyMap()'>✕</div>
-        <div id='keybinds'>
-            <div id='single'></div>
-            <div id='continuous'></div>
-        </div>
     </div>
     <div id='cameraButton' onclick="MAIN.game.toggleCamera(event)"></div>
     <div id="messageBox"></div>

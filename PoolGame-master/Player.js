@@ -13,7 +13,7 @@ class Player {
             this.getOpponent().win('The black ball has been illegally pocketed');
         } else if (pocket === this.eightBallPocket && number == 8 && this.remainingBalls.length === 0) {
             console.log('2', number, this.remainingBalls, pocket, this.eightBallPocket);
-            this.win('Every ball has been legaly pocketed');
+            this.win('Every ball has been legally pocketed');
         }
         if (!this.side) {
             for (let side in Game.balls)
@@ -72,15 +72,6 @@ class Player {
         let player = this;
         MAIN.game.getWinnerImage(this.name).then(function(url) {
             winnerElement.style.backgroundImage = 'url(' + url + ')';
-
-            MAIN.keyHandler.setSingleKey('p', 'Print your trophy and save it as a png file', function() {
-                window.open(url).print();
-                MAIN.game.saveImage(url, player.name);
-            });
-            MAIN.keyHandler.setSingleKey('Enter', 'Hide winner image', function() {
-                winnerElement.style.display = 'none';
-                MAIN.scene.trophyView();
-            });
         });
     }
 }
