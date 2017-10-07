@@ -245,6 +245,7 @@ class Game {
             setTimeout(function() {
                 game.freePlace(ball);
                 game.switchPlayers();
+                MAIN.scene.animateScale(ball, { x: 1, y: 1, z: 1 }, 1000);
             }, 500);
         } else {
             setTimeout(function() {
