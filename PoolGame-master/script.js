@@ -18,8 +18,8 @@ function timeGameLoop() {
 
 function newGame(n1, n2) {
     do{
-        var name1 = n1 || prompt('Player 1 name?', 'Player 1'),
-            name2 = n2 || prompt('Player 2 name?', 'Player 2');
+        var name1 = n1 || prompt('Name first player', 'Willem'),
+            name2 = n2 || prompt('Name second player', 'Paardman');
     }while(name1.includes('//') || name2.includes('//'));
 
     name1 = name1.substr(0, 1).toUpperCase() + name1.substr(1);
