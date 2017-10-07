@@ -5,8 +5,6 @@ class Game {
         this.shootingEnabled = true;
         this.movingBalls = 0;
 
-        this.hitSound = new FrequencySound('sound/hit.mp3');
-        this.pocketSound = new VolumeSound('sound/pocket.mp3');
 
         this.balls = [
             new Ball(0, -13.5 / 2),
@@ -247,7 +245,6 @@ class Game {
             setTimeout(function() {
                 game.freePlace(ball);
                 game.switchPlayers();
-                MAIN.scene.animateScale(ball, { x: 1, y: 1, z: 1 }, 1000);
             }, 500);
         } else {
             setTimeout(function() {
@@ -287,8 +284,6 @@ class Game {
 
                     that.selectedBall.setSpeed(speed);
                     //timeGameLoop();
-
-                    that.hitSound.play(power / 0.3075)
 
                     self.setTimeout(function() {
                         slowTween.stop();
