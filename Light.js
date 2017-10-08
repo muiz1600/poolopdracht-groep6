@@ -1,5 +1,5 @@
 class DirectionalLight extends THREE.DirectionalLight {
-    constructor(scene, x, y, z, target, shadow = true, color = 0xffffff, intensity = 1) {
+    constructor(scene, x, y, z, shadow = true, color = 0xffffff, intensity = 1) {
         super(color);
         this.intensity = intensity;
 
@@ -12,7 +12,6 @@ class DirectionalLight extends THREE.DirectionalLight {
         }
 
         this.position.set(x, y, z);
-        target = this.position;
         scene.add(this);
     }
 }

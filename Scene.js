@@ -37,7 +37,7 @@ class Scene extends THREE.Scene {
         this.textureLoader = new THREE.TextureLoader();
 
         this.lights = {
-            directional: new DirectionalLight(this, -10, 30, 30, null, true, 0xffffff, 0.6),
+            directional: new DirectionalLight(this, -10, 30, 30, true, 0xffffff, 0.6),
             ambient: new AmbientLight(this, 0xffffdd, 0.1)
         };
 
@@ -188,7 +188,7 @@ class Scene extends THREE.Scene {
         }, 3000);
     }
 
-    animateObject(object, newPos, time = 1000, target = null, easing = TWEEN.Easing.Quartic.InOut) {
+    animateObject(object, newPos, time = 1000, target = null) {
         let updater = self.setInterval(TWEEN.update);
         return new TWEEN.Tween(object.position)
             .to(newPos, time)
@@ -200,10 +200,9 @@ class Scene extends THREE.Scene {
             .onComplete(function() {
                 clearInterval(updater);
             })
-            .easing(easing)
             .start();
     }
-    animateScale(object, newPos, time = 1000, target = null, easing = TWEEN.Easing.Quartic.InOut) {
+    animateScale(object, newPos, time = 1000, target = null) {
         let updater = self.setInterval(TWEEN.update);
         return new TWEEN.Tween(object.scale)
             .to(newPos, time)
@@ -213,7 +212,6 @@ class Scene extends THREE.Scene {
             .onComplete(function() {
                 clearInterval(updater);
             })
-            .easing(easing)
             .start();
     }
 

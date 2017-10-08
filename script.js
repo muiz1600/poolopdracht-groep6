@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
     MAIN = new Main(document.getElementById('renderView'));
-
     let users = location.hash.substr(1).split('//');
     if (users.length === 2)
         newGame(users[0], users[1]);
