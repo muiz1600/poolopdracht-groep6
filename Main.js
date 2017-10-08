@@ -45,21 +45,6 @@ class Main {
             let powerSpeed = 20 / MAIN.loop.tps;
             MAIN.game.cuePower -= powerSpeed;
         });
-
-        document.addEventListener('keydown', function(e) {
-            if (this.katKeys === undefined) {
-                this.katKeys = '';
-            }
-            this.katKeys += e.key;
-            if (this.katKeys.includes('kat.gif')) {
-                this.katKeys = '';
-                for (let ball of MAIN.game.balls) {
-                    ball.material = MAIN.katMaterial;
-                }
-                MAIN.scene.tableFloor.mesh.material = MAIN.katMaterial;
-                MAIN.katMaterial.toggle();
-            }
-        }, false);
     }
 
     msg(string) {
