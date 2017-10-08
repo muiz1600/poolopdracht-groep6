@@ -12,7 +12,6 @@ class Ball extends THREE.Mesh {
         super(geometry, material);
 
 
-        //this.color = new THREE.Color(color);
         this.stripe = stripe;
         this.radius = radius;
         this.position.set(x, radius, z);
@@ -22,16 +21,10 @@ class Ball extends THREE.Mesh {
             ball: 0.95,
             wall: 0.8
         };
+
         this.number = number;
         this.currentRotation = 0;
         MAIN.scene.add(this);
-
-        //reflectivity
-        // this.cubeCamera = new THREEx.CubeCamera(this);
-        // MAIN.game.scene.add(this.cubeCamera.object3d);
-        // this.material.envMap = this.cubeCamera.textureCube;
-        // this.material.reflectivity = 0.7;
-
         this.nextPosition = this.position;
         this.speed = new THREE.Vector3();
         this.rollFriction = 0.6;

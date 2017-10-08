@@ -278,7 +278,6 @@ class Game {
                         speed = new THREE.Vector3(z, 0, x).multiplyScalar(power);
 
                     that.selectedBall.setSpeed(speed);
-                    //timeGameLoop();
 
                     self.setTimeout(function() {
                         slowTween.stop();

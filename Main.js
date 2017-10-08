@@ -3,13 +3,7 @@ class Main {
         this.loop = new GameLoop(60, 120);
         this.keyHandler = new KeyHandler(this.loop);
         this.scene = new Scene(renderElement, this);
-
         this.styleElement = document.body.appendChild(document.createElement('style'));
-
-        this.katMaterial = new MeshAnimationMaterial({
-            directory: 'img/textures/kat',
-            side: THREE.FrontSide
-        });
         this.setKeymap();
     }
 
@@ -67,38 +61,6 @@ class Main {
             }
         }, false);
     }
-
-    showKeyMap() {
-        let keyMap = this.keyHandler.keyMap,
-            singleKeyElement = document.getElementById('single'),
-            continuousKeyElement = document.getElementById('continuous'),
-            singleHTML = '<ul>',
-            continuousHTML = '<ul>';
-
-        for (let key in keyMap.single)
-            singleHTML += `<li>
-                        <div class='key'>${key==' '?'Space':key}</div>
-                        <div class='bindName'>${keyMap.single[key].name}
-                    </li>`;
-        singleHTML += '</ul>';
-
-        for (let key in keyMap.continuous)
-            continuousHTML += `<li>
-                        <div class='key'>${key==' '?'Space':key}</div>
-                        <div class='bindName'>${keyMap.continuous[key].name}
-                    </li>`;
-        continuousHTML += '</ul>';
-
-        singleKeyElement.innerHTML = singleHTML;
-        continuousKeyElement.innerHTML = continuousHTML;
-        let helpElement = document.getElementById('help');
-        if (this.keyDisplay === 'block')
-            this.keyDisplay = 'none';
-        else
-            this.keyDisplay = 'block';
-        helpElement.style.display = this.keyDisplay;
-    }
-
 
     msg(string) {
         let msgBox = document.getElementById('messageBox'),
