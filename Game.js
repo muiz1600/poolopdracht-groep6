@@ -94,11 +94,7 @@ class Game {
         this.gameLoop = MAIN.loop.add(function() { MAIN.game.onLoop() });
 
         document.getElementsByTagName('progress')[0].style.display = 'block';
-        if (MAIN.isMobile) {
-            document.getElementById('cameraButton').style.display = 'block';
-            window.addEventListener("deviceorientation", function(e) {
-                MAIN.game.orientation(e);
-            }, false);
+        document.getElementById('cameraButton').style.display = 'block';
             document.addEventListener('touchstart', function(e) {
                 MAIN.game.tapLength = 0;
                 MAIN.game.tapStart = new THREE.Vector2(e.touches[0].pageX, e.touches[0].pageY);
@@ -145,7 +141,7 @@ class Game {
                     }
                 }
             }, false);
-        } else {
+
             MAIN.scene.topView();
             document.addEventListener('mousemove', function(e) {
                 MAIN.game.mousemove(e);
@@ -153,15 +149,13 @@ class Game {
             document.addEventListener('mousedown', function(e) {
                 MAIN.game.mousedown(e);
             }, false);
-        }
+
     }
 
     orientation(e) {
         let rotation = THREE.Math.degToRad(e.alpha - 180);
-
         let quaternion = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rotation + Math.PI);
         MAIN.scene.cue.setRotationFromQuaternion(quaternion);
-
         MAIN.scene.camera.rotation.set(MAIN.scene.camera.rotation._x, MAIN.scene.camera.rotation._y, MAIN.game.fixedRotation ? Math.PI : rotation);
     }
 

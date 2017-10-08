@@ -1,32 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/PoolGame-master/index.html" line="52" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="5673021c-c250-491d-8d4c-0100c88d0375" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/10ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/11ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/12ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/13ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/14ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/15ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/1ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/2ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/3ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/4ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/5ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/6ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/7ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/8ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/9ball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/ball-texture-psds.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/balls/whiteball.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/PoolGame.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Ball.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Game.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/GameLoop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/KeyHandler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Light.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/MeshAnimationMaterial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/ObjMesh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Player.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/Scene.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/SkyBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/negx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/negy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/negz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/posx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/posy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/posz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/skybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/bridge/skyboxsun5deg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/negx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/negy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/negz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/posx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/posy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/clouds/posz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/negx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/negy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/negz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/posx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/posy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/space/posz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/negx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/negy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/negz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/posx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/posy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/skybox/sunset/posz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/balls/a/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/cloth©.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/floorwood©.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/gold.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_0_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_10_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_11_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_12_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_13_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_14_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_15_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_16_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_17_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_18_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_19_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_1_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_20_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_21_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_22_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_23_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_24_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_25_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_26_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_27_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_28_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_29_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_2_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_30_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_31_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_32_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_33_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_34_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_35_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_36_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_37_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_38_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_39_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_3_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_4_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_5_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_6_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_7_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_8_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/kat/frame_9_delay-0.04s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/wood©.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/img/textures/yourewinner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/floor.c4d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/floor.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/floor.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/legs.c4d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/legs.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/legs.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/poolfloor.c4d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/poolpoints.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/poolpoints.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/woodwalls.c4d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/woodwalls.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/table/woodwalls.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/trophy.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/obj/trophy.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/sound/hit.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/sound/pocket.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/OBJLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/OrbitControls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/Stats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/dat.gui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/three.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PoolGame-master/three/three.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Arch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Ball.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/CannonUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/EightBallGame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Game.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Gui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Hole.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/LongWall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/ShortWall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/TableLight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/WhiteBall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sound/hit.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sound/pocket.mp3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.js" afterPath="$PROJECT_DIR$/Game.js" />
     </list>
     <ignored path="poolopdracht-groep6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,107 +182,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/Game.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="152">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/index.html">
+      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="849">
-              <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Light.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/Light.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="750">
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Scene.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/Scene.js">
+        <entry file="file://$PROJECT_DIR$/Scene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3706">
-              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameLoop.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/GameLoop.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkyBox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/SkyBox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PoolGame-master/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <marker date="1507301645777" expanded="true" signature="2765:2935" ph="..." />
-                <marker date="1507301645777" expanded="true" signature="2883:2930" ph="..." />
-                <marker date="1507301645777" expanded="true" signature="3048:3222" ph="..." />
-                <marker date="1507301645777" expanded="true" signature="3166:3217" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +240,7 @@
         <option value="$PROJECT_DIR$/PoolGame-master/Main.js" />
         <option value="$PROJECT_DIR$/PoolGame-master/Scene.js" />
         <option value="$PROJECT_DIR$/PoolGame-master/main.css" />
+        <option value="$PROJECT_DIR$/Game.js" />
       </list>
     </option>
   </component>
@@ -193,7 +252,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1916" />
+    <option name="width" value="1915" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -343,15 +402,15 @@
       <workItem from="1507285787541" duration="3248000" />
       <workItem from="1507290808059" duration="5554000" />
       <workItem from="1507301282876" duration="3024000" />
-      <workItem from="1507470468552" duration="1314000" />
+      <workItem from="1507470468552" duration="3222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21353000" />
+    <option name="totallyTimeSpent" value="23261000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1916" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="1915" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -390,8 +449,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebGL-Billiards-master/index.html" />
-    <entry file="file://$PROJECT_DIR$/WebGL-Billiards-master/js/CannonUtils.js" />
     <entry file="file://$PROJECT_DIR$/WebGL-Billiards-master/js/EightBallGame.js" />
     <entry file="file://$PROJECT_DIR$/js/Game.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -534,12 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <marker date="1507301645777" expanded="true" signature="2765:2935" ph="..." />
-            <marker date="1507301645777" expanded="true" signature="2883:2930" ph="..." />
-            <marker date="1507301645777" expanded="true" signature="3048:3222" ph="..." />
-            <marker date="1507301645777" expanded="true" signature="3166:3217" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,10 +635,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Scene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="152">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
